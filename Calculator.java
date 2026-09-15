@@ -1,4 +1,4 @@
-import java.util.Scanner;
+﻿import java.util.Scanner;
 
 public class Calculator {
 
@@ -18,6 +18,7 @@ public class Calculator {
         System.out.println("2. Subtraction");
         System.out.println("3. Multiplication");
         System.out.println("4. Division");
+        System.out.println("5. Logarithm");
 
         System.out.print("Choose an operation: ");
         int choice = scanner.nextInt();
@@ -40,6 +41,10 @@ public class Calculator {
 
             case 4:
                 result = Division.calculate(num1, num2);
+                break;
+
+            case 5:
+                result = Log.calculate(num1);
                 break;
 
             default:
